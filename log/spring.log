@@ -1,0 +1,53 @@
+2022-07-03 00:12:00.472 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.c.mapper.CarMapper.selectById        : ==>  Preparing: SELECT id,create_time,user_id,car_id,type,car_describe,rent,deposit,status,thumbnail_url,slide_url,address,contact_name,contact_phone,is_deleted FROM car WHERE id=? AND is_deleted=0 
+2022-07-03 00:12:00.477 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.c.mapper.CarMapper.selectById        : ==> Parameters: 6(String)
+2022-07-03 00:12:00.478 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.c.mapper.CarMapper.selectById        : <==      Total: 1
+2022-07-03 00:12:00.478 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.carlayui.controller.CarController    : slideList==>[/upload/2022-06-30-11-24-57.jpeg]
+2022-07-03 00:12:00.597 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.c.mapper.CarMapper.selectList        : ==>  Preparing: SELECT id,create_time,user_id,car_id,type,car_describe,rent,deposit,status,thumbnail_url,slide_url,address,contact_name,contact_phone,is_deleted FROM car WHERE is_deleted=0 AND status = ? ORDER BY create_time DESC limit 6 
+2022-07-03 00:12:00.616 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.c.mapper.CarMapper.selectList        : ==> Parameters: 1(Integer)
+2022-07-03 00:12:00.617 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.c.mapper.CarMapper.selectList        : <==      Total: 6
+2022-07-03 01:59:54.079 DEBUG 4340 --- [http-nio-8080-exec-4] c.y.c.mapper.CarMapper.selectList        : ==>  Preparing: SELECT id,create_time,user_id,car_id,type,car_describe,rent,deposit,status,thumbnail_url,slide_url,address,contact_name,contact_phone,is_deleted FROM car WHERE is_deleted=0 AND status = ? ORDER BY create_time DESC limit 6 
+2022-07-03 01:59:54.080 DEBUG 4340 --- [http-nio-8080-exec-4] c.y.c.mapper.CarMapper.selectList        : ==> Parameters: 1(Integer)
+2022-07-03 01:59:54.082 DEBUG 4340 --- [http-nio-8080-exec-4] c.y.c.mapper.CarMapper.selectList        : <==      Total: 6
+2022-07-03 01:59:54.252 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.c.mapper.CarMapper.selectList        : ==>  Preparing: SELECT id,create_time,user_id,car_id,type,car_describe,rent,deposit,status,thumbnail_url,slide_url,address,contact_name,contact_phone,is_deleted FROM car WHERE is_deleted=0 AND status = ? ORDER BY create_time DESC limit 6 
+2022-07-03 01:59:54.253 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.c.mapper.CarMapper.selectList        : ==> Parameters: 1(Integer)
+2022-07-03 01:59:54.255 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.c.mapper.CarMapper.selectList        : <==      Total: 6
+2022-07-03 02:17:09.742 DEBUG 4340 --- [http-nio-8080-exec-3] c.y.c.mapper.CarMapper.selectList        : ==>  Preparing: SELECT id,create_time,user_id,car_id,type,car_describe,rent,deposit,status,thumbnail_url,slide_url,address,contact_name,contact_phone,is_deleted FROM car WHERE is_deleted=0 AND status = ? ORDER BY create_time DESC limit 6 
+2022-07-03 02:17:09.742 DEBUG 4340 --- [http-nio-8080-exec-3] c.y.c.mapper.CarMapper.selectList        : ==> Parameters: 1(Integer)
+2022-07-03 02:17:09.744 DEBUG 4340 --- [http-nio-8080-exec-3] c.y.c.mapper.CarMapper.selectList        : <==      Total: 6
+2022-07-03 02:17:16.109 DEBUG 4340 --- [http-nio-8080-exec-8] c.y.c.mapper.UserMapper.selectOne        : ==>  Preparing: SELECT id,name,username,password,phone,email,create_time,id_card,avatar,status,role,sex,is_deleted FROM user WHERE is_deleted=0 AND username = ? 
+2022-07-03 02:17:16.109 DEBUG 4340 --- [http-nio-8080-exec-8] c.y.c.mapper.UserMapper.selectOne        : ==> Parameters: user(String)
+2022-07-03 02:17:16.110 DEBUG 4340 --- [http-nio-8080-exec-8] c.y.c.mapper.UserMapper.selectOne        : <==      Total: 1
+2022-07-03 02:17:16.133  INFO 4340 --- [http-nio-8080-exec-8] c.y.carlayui.service.UserServiceImpl     : userService中通过subject获取的principal=User(id=1, name=汪楠丰, username=user, password=123, phone=15213535519, email=120397569@qq.com, createTime=Thu Jun 30 10:58:13 CST 2022, idCard=500228200104278958, avatar=/img/default-avatar.jpg, status=1, role=customer, sex=保密, mod=0, isDeleted=0)
+2022-07-03 02:17:17.663 DEBUG 4340 --- [http-nio-8080-exec-1] c.y.c.mapper.CarMapper.selectList        : ==>  Preparing: SELECT id,create_time,user_id,car_id,type,car_describe,rent,deposit,status,thumbnail_url,slide_url,address,contact_name,contact_phone,is_deleted FROM car WHERE is_deleted=0 AND status = ? ORDER BY create_time DESC limit 6 
+2022-07-03 02:17:17.664 DEBUG 4340 --- [http-nio-8080-exec-1] c.y.c.mapper.CarMapper.selectList        : ==> Parameters: 1(Integer)
+2022-07-03 02:17:17.666 DEBUG 4340 --- [http-nio-8080-exec-1] c.y.c.mapper.CarMapper.selectList        : <==      Total: 6
+2022-07-03 02:17:20.323 DEBUG 4340 --- [http-nio-8080-exec-9] c.y.c.mapper.OrderMapper.selectPage      : ==>  Preparing: SELECT COUNT(1) FROM car_order WHERE customer_id = ? 
+2022-07-03 02:17:20.324 DEBUG 4340 --- [http-nio-8080-exec-9] c.y.c.mapper.OrderMapper.selectPage      : ==> Parameters: 1(Long)
+2022-07-03 02:17:20.325 DEBUG 4340 --- [http-nio-8080-exec-9] c.y.c.mapper.OrderMapper.selectPage      : ==>  Preparing: SELECT id,create_time,customer_id,owner_id,car_id,status,rent,deposit,days,total,start_date,end_date FROM car_order WHERE customer_id = ? LIMIT ?,? 
+2022-07-03 02:17:20.325 DEBUG 4340 --- [http-nio-8080-exec-9] c.y.c.mapper.OrderMapper.selectPage      : ==> Parameters: 1(Long), 0(Long), 6(Long)
+2022-07-03 02:17:20.329 DEBUG 4340 --- [http-nio-8080-exec-9] c.y.c.mapper.OrderMapper.selectPage      : <==      Total: 3
+2022-07-03 02:19:42.197 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.c.mapper.CarMapper.selectList        : ==>  Preparing: SELECT id,create_time,user_id,car_id,type,car_describe,rent,deposit,status,thumbnail_url,slide_url,address,contact_name,contact_phone,is_deleted FROM car WHERE is_deleted=0 AND status = ? ORDER BY create_time DESC limit 6 
+2022-07-03 02:19:42.197 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.c.mapper.CarMapper.selectList        : ==> Parameters: 1(Integer)
+2022-07-03 02:19:42.198 DEBUG 4340 --- [http-nio-8080-exec-6] c.y.c.mapper.CarMapper.selectList        : <==      Total: 6
+2022-07-03 02:19:46.870 DEBUG 4340 --- [http-nio-8080-exec-5] c.y.carlayui.controller.CarController    : submitSearch...
+2022-07-03 02:19:46.870 DEBUG 4340 --- [http-nio-8080-exec-5] c.y.carlayui.controller.CarController    : address=
+2022-07-03 02:19:46.870 DEBUG 4340 --- [http-nio-8080-exec-5] c.y.carlayui.controller.CarController    : type=跑车
+2022-07-03 02:19:46.870 DEBUG 4340 --- [http-nio-8080-exec-5] c.y.carlayui.controller.CarController    : rent=
+2022-07-03 02:19:46.870 DEBUG 4340 --- [http-nio-8080-exec-5] c.y.carlayui.controller.CarController    : cur=1
+2022-07-03 02:19:46.872 DEBUG 4340 --- [http-nio-8080-exec-5] c.y.c.mapper.CarMapper.selectPage        : ==>  Preparing: SELECT COUNT(1) FROM car WHERE is_deleted = 0 AND type = ? AND status = ? 
+2022-07-03 02:19:46.872 DEBUG 4340 --- [http-nio-8080-exec-5] c.y.c.mapper.CarMapper.selectPage        : ==> Parameters: 跑车(String), 1(Integer)
+2022-07-03 02:19:50.784 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.carlayui.controller.CarController    : submitSearch...
+2022-07-03 02:19:50.784 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.carlayui.controller.CarController    : address=
+2022-07-03 02:19:50.784 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.carlayui.controller.CarController    : type=SUV
+2022-07-03 02:19:50.784 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.carlayui.controller.CarController    : rent=
+2022-07-03 02:19:50.784 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.carlayui.controller.CarController    : cur=1
+2022-07-03 02:19:50.786 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.c.mapper.CarMapper.selectPage        : ==>  Preparing: SELECT COUNT(1) FROM car WHERE is_deleted = 0 AND type = ? AND status = ? 
+2022-07-03 02:19:50.787 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.c.mapper.CarMapper.selectPage        : ==> Parameters: SUV(String), 1(Integer)
+2022-07-03 02:19:50.787 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.c.mapper.CarMapper.selectPage        : ==>  Preparing: SELECT id,create_time,user_id,car_id,type,car_describe,rent,deposit,status,thumbnail_url,slide_url,address,contact_name,contact_phone,is_deleted FROM car WHERE is_deleted=0 AND type = ? AND status = ? ORDER BY create_time DESC LIMIT ?,? 
+2022-07-03 02:19:50.788 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.c.mapper.CarMapper.selectPage        : ==> Parameters: SUV(String), 1(Integer), 0(Long), 6(Long)
+2022-07-03 02:19:50.788 DEBUG 4340 --- [http-nio-8080-exec-2] c.y.c.mapper.CarMapper.selectPage        : <==      Total: 2
+2022-07-03 02:25:24.940 DEBUG 4340 --- [http-nio-8080-exec-7] c.y.c.mapper.OrderMapper.selectPage      : ==>  Preparing: SELECT COUNT(1) FROM car_order WHERE customer_id = ? 
+2022-07-03 02:25:24.940 DEBUG 4340 --- [http-nio-8080-exec-7] c.y.c.mapper.OrderMapper.selectPage      : ==> Parameters: 1(Long)
+2022-07-03 02:25:24.941 DEBUG 4340 --- [http-nio-8080-exec-7] c.y.c.mapper.OrderMapper.selectPage      : ==>  Preparing: SELECT id,create_time,customer_id,owner_id,car_id,status,rent,deposit,days,total,start_date,end_date FROM car_order WHERE customer_id = ? LIMIT ?,? 
+2022-07-03 02:25:24.942 DEBUG 4340 --- [http-nio-8080-exec-7] c.y.c.mapper.OrderMapper.selectPage      : ==> Parameters: 1(Long), 0(Long), 6(Long)
+2022-07-03 02:25:24.943 DEBUG 4340 --- [http-nio-8080-exec-7] c.y.c.mapper.OrderMapper.selectPage      : <==      Total: 3
